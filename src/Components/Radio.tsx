@@ -6,6 +6,12 @@ const courses = [
   { id: 3, name: "Reactjs" },
 ];
 
+const test = [
+  { id: 1, name: "HTML, CSS" },
+  { id: 2, name: "Angular" },
+  { id: 3, name: "Reactjs" },
+];
+
 function Radio() {
   const handleSubmit = () => {
     console.log({ id: checked });
