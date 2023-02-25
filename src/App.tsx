@@ -4,7 +4,6 @@ import Radio from "./Components/Radio";
 import CheckBox from "./Components/CheckBos";
 import TodoList from "./Components/TodoList";
 import Mounted from "./Components/Mounted-Unmounted";
-import Resize from "./Components/Resize";
 
 function App() {
   return (
@@ -14,8 +13,7 @@ function App() {
       {/* <Radio /> */}
       {/* <CheckBox /> */}
       {/* <TodoList /> */}
-      {/* <Mounted /> */}
-      <Resize />
+      <Mounted />
     </div>
   );
 }
