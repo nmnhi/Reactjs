@@ -40,6 +40,7 @@ import { useEffect, useState } from "react";
 // -------------------------
 //  1. Callback luôn được gọi sau khi component mounted
 //  2. Cleanup function luôn đc gọi trước khi component unmounted
+//  3. Cleanup function luôn đc gọi trước khi callback được gọi (trừ lần đc mounted)
 
 const tabs = ["posts", "comments", "albums"];
 

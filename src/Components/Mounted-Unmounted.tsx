@@ -1,5 +1,9 @@
 import Content from "./Content";
 import { useState } from "react";
+import Resize from "./Resize";
+import Countdown from "./Countdown";
+import Count from "./Count";
+import Avatar from "./SelectAvatar";
 // Mounted & Unmounted
 // Mount là thời điểm đưa 1 component vào sử dụng còn unmounted là thời đưa component ra khỏi và không sử dụng nó nữa
 
@@ -13,7 +17,11 @@ function Mounted() {
       >
         Show
       </button>
-      {show && <Content />}
+      {/* {show && <Content />} */}
+      {show && <Resize />}
+      {show && <Countdown />}
+      {show && <Count />}
+      {show && <Avatar />}
     </div>
   );
 }
