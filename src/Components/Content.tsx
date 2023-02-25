@@ -24,6 +24,7 @@ import { useEffect, useState } from "react";
  3. Listen DOM event
 	- Scroll
 	- Resize
+
  4. Cleanup
 	- Remove listener / Unsubscribe
 	- Clear timer
@@ -38,6 +39,7 @@ import { useEffect, useState } from "react";
 // - Callback sẽ được gọi lại mỗi khi deps thay đổi
 // -------------------------
 //  1. Callback luôn được gọi sau khi component mounted
+//  2. Cleanup function luôn đc gọi trước khi component unmounted
 
 const tabs = ["posts", "comments", "albums"];
 
@@ -45,6 +47,7 @@ function Content() {
   const [title, setTitle] = useState("");
   const [posts, setPosts] = useState([]);
   const [type, setType] = useState("posts");
+  const [showGoToTop, setShowGoToTop] = useState(false);
 
   //   Only callback
   useEffect(() => {
@@ -66,6 +69,29 @@ function Content() {
       res.json().then((posts) => setPosts(posts))
     );
   }, [type]);
+
+  // DOM event
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        // Logic show
+        setShowGoToTop(true);
+      } else {
+        // Logic hide
+        setShowGoToTop(false);
+      }
+      // setShowGoToTop(window.scrollY >= 200);
+    };
+    window.addEventListener("scroll", handleScroll);
+    console.log("Add event listener");
+
+    // Cleanup function
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      console.log("Remove event listener");
+      // Target of remove listener is leak memory dose not happen
+    };
+  }, []);
 
   return (
     <div>
@@ -92,6 +118,11 @@ function Content() {
         {posts.map((post: any) => (
           <li key={post.id}>{post.title || post.name}</li>
         ))}
+        {showGoToTop && (
+          <button className="px-3 py-1 border border-gray-400 rounded-lg fixed bottom-5 right-4">
+            Go to Top
+          </button>
+        )}
       </ul>
     </div>
   );
