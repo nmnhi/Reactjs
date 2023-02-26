@@ -1,0 +1,9 @@
+SPA: Single page application
+
+- ReactJS là 1 trong những thư viện taọ ra SPA
+- Các ông lớn sử dụng SPA: Google, Facebook, Twitter
+- Các SPA khác: Shopee, 30shine, chotot, zingmp3
+
+
+
+### Arrow function
