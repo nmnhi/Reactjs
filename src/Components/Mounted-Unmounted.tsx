@@ -5,6 +5,7 @@ import Countdown from "./Countdown";
 import Count from "./Count";
 import Avatar from "./SelectAvatar";
 import Chat from "./FakeChat";
+import UseLayoutEffect from "./UseLayoutEffect";
 // Mounted & Unmounted
 // Mount là thời điểm đưa 1 component vào sử dụng còn unmounted là thời đưa component ra khỏi và không sử dụng nó nữa
 
@@ -23,7 +24,8 @@ function Mounted() {
       {/* {show && <Countdown />} */}
       {/* {show && <Count />} */}
       {/* {show && <Avatar />} */}
-      {show && <Chat />}
+      {/* {show && <Chat />} */}
+      {show && <UseLayoutEffect />}
     </div>
   );
 }
