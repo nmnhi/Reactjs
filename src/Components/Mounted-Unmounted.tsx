@@ -7,6 +7,7 @@ import Avatar from "./SelectAvatar";
 import Chat from "./FakeChat";
 import UseLayoutEffect from "./UseLayoutEffect";
 import UseRefTimer from "./UseRef-Timer";
+import Memo from "./React-Memo";
 // Mounted & Unmounted
 // Mount là thời điểm đưa 1 component vào sử dụng còn unmounted là thời đưa component ra khỏi và không sử dụng nó nữa
 
@@ -27,7 +28,8 @@ function Mounted() {
       {/* {show && <Avatar />} */}
       {/* {show && <Chat />} */}
       {/* {show && <UseLayoutEffect />} */}
-      {show && <UseRefTimer />}
+      {/* {show && <UseRefTimer />} */}
+      {show && <Memo />}
     </div>
   );
 }
