@@ -11,6 +11,7 @@ import Memo from "./React-Memo";
 import Parent from "./Parent";
 import AddProduct from "./Add-Product";
 import UseReducer from "./useReducer";
+import Todo from "./UseReducerTodo";
 
 // Mounted & Unmounted
 // Mount là thời điểm đưa 1 component vào sử dụng còn unmounted là thời đưa component ra khỏi và không sử dụng nó nữa
@@ -36,7 +37,8 @@ function Mounted() {
       {/* {show && <Memo />} */}
       {/* {show && <Parent />} */}
       {/* {show && <AddProduct />} */}
-      {show && <UseReducer />}
+      {/* {show && <UseReducer />} */}
+      {show && <Todo />}
     </div>
   );
 }
