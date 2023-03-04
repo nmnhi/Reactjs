@@ -10,6 +10,8 @@ import UseRefTimer from "./UseRef-Timer";
 import Memo from "./React-Memo";
 import Parent from "./Parent";
 import AddProduct from "./Add-Product";
+import UseReducer from "./useReducer";
+
 // Mounted & Unmounted
 // Mount là thời điểm đưa 1 component vào sử dụng còn unmounted là thời đưa component ra khỏi và không sử dụng nó nữa
 
@@ -33,7 +35,8 @@ function Mounted() {
       {/* {show && <UseRefTimer />} */}
       {/* {show && <Memo />} */}
       {/* {show && <Parent />} */}
-      {show && <AddProduct />}
+      {/* {show && <AddProduct />} */}
+      {show && <UseReducer />}
     </div>
   );
 }
