@@ -2,6 +2,12 @@
 exports.__esModule = true;
 exports.ThemeContext = exports.ThemeProvider = void 0;
 var react_1 = require("react");
+// Context
+// CompA => CompB => CompC
+// Them: Dark/Light
+// 1. Create Context
+// 2. Provider
+// 3. Consumer
 var ThemeContext = react_1.createContext("");
 exports.ThemeContext = ThemeContext;
 function ThemeProvider(_a) {

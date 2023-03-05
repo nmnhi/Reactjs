@@ -1,5 +1,13 @@
 import { useState, createContext } from "react";
 
+// Context
+// CompA => CompB => CompC
+// Them: Dark/Light
+
+// 1. Create Context
+// 2. Provider
+// 3. Consumer
+
 const ThemeContext = createContext<any>("");
 
 function ThemeProvider({ children }: any) {

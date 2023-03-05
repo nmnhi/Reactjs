@@ -4,12 +4,6 @@ require("../../App.scss");
 var Content_1 = require("./Content");
 var ThemeContext_1 = require("./ThemeContext");
 var react_1 = require("react");
-// Context
-// CompA => CompB => CompC
-// Them: Dark/Light
-// 1. Create Context
-// 2. Provider
-// 3. Consumer
 function Context() {
     var context = react_1.useContext(ThemeContext_1.ThemeContext);
     return (React.createElement("div", { className: "mt-6" },
