@@ -8,7 +8,7 @@ import { useState, createContext } from "react";
 // 2. Provider
 // 3. Consumer
 
-const ThemeContext = createContext<any>("");
+const ThemeContext = createContext<any>(0);
 
 function ThemeProvider({ children }: any) {
   const [theme, setTheme] = useState("dark");

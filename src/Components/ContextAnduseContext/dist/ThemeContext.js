@@ -8,7 +8,7 @@ var react_1 = require("react");
 // 1. Create Context
 // 2. Provider
 // 3. Consumer
-var ThemeContext = react_1.createContext("");
+var ThemeContext = react_1.createContext(0);
 exports.ThemeContext = ThemeContext;
 function ThemeProvider(_a) {
     var children = _a.children;
