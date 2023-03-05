@@ -13,6 +13,7 @@ import AddProduct from "./Add-Product";
 import UseReducer from "./useReducer";
 import Todo from "./UseReducerTodo";
 import Staff from "./TodoStaff";
+import TodoApp from "./Todo";
 
 // Mounted & Unmounted
 // Mount là thời điểm đưa 1 component vào sử dụng còn unmounted là thời đưa component ra khỏi và không sử dụng nó nữa
@@ -40,7 +41,7 @@ function Mounted() {
       {/* {show && <AddProduct />} */}
       {/* {show && <UseReducer />} */}
       {/* {show && <Todo />} */}
-      {show && <Staff />}
+      {show && <TodoApp />}
     </div>
   );
 }
