@@ -3,14 +3,6 @@ import NewContent from "./Content";
 import { ThemeContext } from "./ThemeContext";
 import { useContext } from "react";
 
-// Context
-// CompA => CompB => CompC
-// Them: Dark/Light
-
-// 1. Create Context
-// 2. Provider
-// 3. Consumer
-
 function Context() {
   const context = useContext(ThemeContext);
   return (
